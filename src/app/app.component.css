@@ -1,0 +1,32 @@
+.container {
+  border: 1px solid #ccc;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+.toolbar-below {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+
+.toolbar-position {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+::ng-deep .ql-container.ql-snow {
+    border: none !important;
+}
+
+::ng-deep .ql-toolbar.ql-snow {
+  border: none !important;
+}
+
+::ng-deep .char-count {
+  font-size: 14px !important;
+  font-weight: 100 !important;
+}

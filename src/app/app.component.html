@@ -1,0 +1,12 @@
+<div class="container">
+  <quill-editor
+    #quillEditorRef
+    [modules]="modules"
+    (onEditorCreated)="onEditorCreated($event)"
+  >
+  </quill-editor>
+  <div class="toolbar-below">
+    <button (click)="onAddLinkButton()" [disabled]="hasLink">🔗</button>
+    <div class="char-count">{{charCount}} / {{MAX}}</div>
+  </div>
+</div>

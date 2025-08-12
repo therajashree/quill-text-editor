@@ -1,0 +1,13 @@
+<p>quill-editor</p>
+<div class="quill-wrapper">
+    <quill-editor
+    class="toolbar-position"
+        [(ngModel)]="content"
+        [modules]="modules"
+        [maxLength]="MAX"
+        (onEditorCreated)="onEditorCreated($event)"
+    >
+    </quill-editor>
+    <div class="char-counter">{{ charCount }} / {{ MAX }}</div>
+</div>
+ 
