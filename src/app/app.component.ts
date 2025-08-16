@@ -132,7 +132,7 @@ export class AppComponent implements OnInit {
         index = sel.index;
         length = sel.length;
       } else {
-        index = this.quill.getLength(); // append to end if nothing selected
+        index = Math.max(0, this.quill.getLength() - 1);
         length = 0;
       }
 
